@@ -1,13 +1,13 @@
 # dwmblocks
 
-Modular status bar for dwm written in c.
+rav3ndust's fork of **dwmblocks**, a modular status bar for dwm written in c.
 
 # Modifying blocks
 
 The statusbar is made from text output from commandline programs.  Blocks are
 added and removed by editing the config.h file.
 
-# Luke's build
+# Raven's build
 
 I have dwmblocks read my preexisting scripts
 [here in my dotfiles repo](https://github.com/LukeSmithxyz/voidrice/tree/master/.local/bin/statusbar).
@@ -42,3 +42,7 @@ of this using the `$BLOCK_BUTTON` variable.
 For this feature to work, you need the appropriate patch in dwm as well. See
 [here](https://dwm.suckless.org/patches/statuscmd/).
 Credit for those patches goes to Daniel Bylinka (daniel.bylinka@gmail.com).
+
+## Credits
+
+My fork of **dwmblocks** is itself a fork of Luke Smith's build with some of my own custom scripts.
