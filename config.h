@@ -1,20 +1,23 @@
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
-	{"", 	"internet.sh", 3, 0},
-	{"",    "echo '|'", 0, 1},
-	{"",    "volume.sh", 1, 2},
-	{"",    "echo '|'", 0, 3},
-	{"",    "notif-history.sh", 10, 4},
-	{"",    "echo '|'", 0, 5},
-	{"",	"battery.sh", 3, 6},
-	{"", 	"echo '|'", 0, 7},
-	{"",    "echo $USER at $HOSTNAME", 0, 8},
-	{"",    "echo '|'", 0, 9},
-	{"",    "echo $(date +%D)", 60, 10},
-	{"",    "echo '|'", 0, 11},
-	{"",    "echo $(date +%r)   ", 1, 12},
-//	{"",	"easyshot.sh", 0, 13},
+	{"", 	"echo '|'", 0, 0},
+	{"", 	"$HOME/dwmblocks/launchssc.sh", 0, 1},
+	{"", 	"echo '|'", 0, 2},
+	{"", 	"internet.sh", 3, 3},
+	{"",    "echo '|'", 0, 4},
+	{"",    "volume.sh", 1, 5},
+	{"",    "echo '|'", 0, 6},
+	{"",    "notif-history.sh", 10, 7},
+	{"",    "echo '|'", 0, 8},
+	{"",	"battery.sh", 3, 9},
+	{"", 	"echo '|'", 0, 10},
+	{"",    "echo $USER@$HOSTNAME", 0, 11},
+	{"",    "echo '|'", 0, 12},
+	{"",    "echo $(date +%D)", 60, 13},
+	{"",    "echo '|'", 0, 14},
+	{"",    "echo $(date +%r)   ", 1, 15},
+	{"",	"echo '|'", 0, 16},
 };
 
 //Sets delimiter between status commands. NULL character ('\0') means no delimiter.
