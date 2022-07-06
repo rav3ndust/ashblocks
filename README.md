@@ -9,11 +9,15 @@ added and removed by editing the config.h file.
 
 # Raven's build
 
-I have dwmblocks read my preexisting scripts
-[here in my dotfiles repo](https://github.com/LukeSmithxyz/voidrice/tree/master/.local/bin/statusbar).
-So if you want my build out of the box, download those and put them in your
-`$PATH`. I do this to avoid redundancy in LARBS, both i3 and dwm use the same
-statusbar scripts.
+ashblocks reads scripts from the root folder, and displays them up in the status bar of the window manager. They include: 
+
+- *ssc*, our screenshot tool. This is clickable. 
+- *Network status*. Clickable - clicking it will open *nmtui* so you can edit your network connection graphically. 
+- *Volume controls*. Also clickable, or usable through **(super)+(+)** keybinding.
+- *Notification count* as counted up by **dunst**, our notification manager. 
+- *user@hostname* - vanity
+- *date* - displays the date
+- *time* - Must I really explain what this one does? 
 
 # Signaling changes
 
@@ -29,7 +33,7 @@ You can also run `kill -44 $(pidof dwmblocks)` which will have the same effect,
 but is faster.  Just add 34 to your typical signal number.
 
 My volume module *never* updates on its own, instead I have this command run
-along side my volume shortcuts in dwm to only update it when relevant.
+along side my volume shortcuts in ashWM to only update it when relevant.
 
 Note that all modules must have different signal numbers.
 
@@ -45,4 +49,4 @@ Credit for those patches goes to Daniel Bylinka (daniel.bylinka@gmail.com).
 
 ## Credits
 
-My fork of **dwmblocks** is itself a fork of Luke Smith's build with some of my own custom scripts.
+My fork of **dwmblocks** is itself a fork of Luke Smith's build with some of my own custom scripts built on top.
