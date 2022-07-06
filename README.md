@@ -1,4 +1,4 @@
-# dwmblocks
+# ashblocks
 
 rav3ndust's fork of **dwmblocks**, a modular status bar for dwm written in c.
 
